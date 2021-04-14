@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <title>Le Café De La Place</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="fullFlex">
+        <div id="enterProduct">
+            <h2>Entrez votre produit</h2>
+            <form action="" method="GET">
+                <!-- INPUT NOM DE PRODUIT -->
+                <div>
+                    <label for="productName">Nom</label>
+                </div>
+                <div>
+                    <input id="productName" name="porductName" type="text" placeholder="Nom du produit" required>
+                </div>
+
+                <!-- INPUT QUANTITE DE PRODUIT -->
+                <div>
+                    <label for="productAmount">Quantité</label>
+                </div>
+                <div>
+                    <input id="productAmount" name="poductAmount" type="number" placeholder="Combien de produit" min="1"
+                        required>
+                </div>
+
+                <!-- PRIX D'ACHAT HT -->
+                <div>
+                    <label for="buyingPrice">Prix achat HT</label>
+                </div>
+                <div>
+                    <input id="buyingPrice" name="buyingPrice" type="number" placeholder="Prix d'achat HT" min="1"
+                        required>
+                </div>
+
+                <!-- PRIX VENTE HT -->
+                <div>
+                    <label for="sellingPrice">Prix vente HT</label>
+                </div>
+                <div>
+                    <input id="sellingPrice" name="sellingPrice" type="number" placeholder="Prix de vente HT" min="1"
+                        required>
+                </div>
+
+                <!-- TYPE DE BOISSON -->
+                <div>
+                    <label for="typeDrink">Type de boisson</label>
+                </div>
+                <div>
+                    <select id="typeDrink" name="typeDrink">
+                        <option selected value="boisson">-Boisson-</option>
+                        <option value="boissonAlcoolisee">-Boisson alcoolisée-</option>
+                        <option value="autre">-Autre-</option>
+                    </select>
+                </div>
+
+                <!-- DEGRÉ ALCOOL -->
+                <div id="degreeAlcohol">
+                    <label for="degreeAlcohol">Degré d'alcool :</label>
+                    <input id="inputDegreeAlcohol" name="degreeAlcohol" type="number" placeholder="30°">
+                </div>
+
+                <button id="validateButton">VALIDER</button>
+            </form>
+        </div>
+
+
+        <!-- TABLEAU -->
+        <div id="containerStock">
+            <table id="board">
+                <h1>Le café de la place STOCK</h1>
+                <button id="newProduct">Ajouter un produit</button>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th style="width: 10%;">Nom</th>
+                        <th style="width: 10%;">Quantité</th>
+                        <th style="width: 10%;">Prix achat HT</th>
+                        <th style="width: 10%;">Prix vente HT</th>
+                        <th style="width: 10%;">Marge HT</th>
+                        <th style="width: 10%;">Prix vente TTC</th>
+                        <th style="width: 10%;">Type</th>
+                        <th style="width: 10%;">Degrée</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="productTbody">
+
+                </tbody>
+            </table>
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <script src="./product.js" type="text/javascript"></script>
+    <script src="./drink.js" type="text/javascript"></script>
+    <script src="./alcohol.js" type="text/javascript"></script>
+    <script src="./other.js" type="text/javascript"></script>
+    <script src="./function.js" type="text/javascript"></script>
+    <script src="./app.js" type="text/javascript"></script>
+</body>
+
+</html>

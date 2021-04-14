@@ -1,0 +1,85 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(214, 219, 219);
+    font-family: 'Roboto', sans-serif;
+}
+
+#newProduct {
+    position: absolute;
+    right: 47vh;
+    top: 25px;
+    background-color: #ffffff66;
+    border: 1px solid black;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+    height: 6vh;
+    border-radius: 10px;
+}
+
+#enterProduct {
+    h2 {
+        font-size: 23px;
+        font-family: 'Akaya Telivigala', cursive;
+
+    }
+    background-color: #a59c968f;
+    width: 30vh;
+    height: 100vh;
+    display: none;
+    z-index: 10;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    input, select {
+        background-color: transparent;
+        border: transparent;
+        border-bottom: 2px white solid;
+        margin-bottom: 5vh;
+        margin-top: 2vh;
+        color: white;
+        height: 3vh;
+    }
+    button {
+        background-color: transparent;
+        border: transparent;
+        border-bottom: 2px white solid;
+
+        margin-top: 2vh;
+        color: white;
+        height: 6vh;
+    }
+    ::placeholder {
+        color: white;
+    }
+}
+
+
+#degreeAlcohol {
+    display: none;
+}
+
+#containerStock {
+    background-image: linear-gradient(165deg, #ffe87c 0, #ffdd7a 8.33%, #ffd078 16.67%, #ffc276 25%, #f8b273 33.33%, #eaa170 41.67%, #d8906c 50%, #c48067 58.33%, #b27263 66.67%, #a2675f 75%, #955e5c 83.33%, #895759 91.67%, #7f5158 100%);
+    width: 100%;
+    text-align: -webkit-center;
+    height: 100vh;
+    overflow: scroll;
+}
+
+#board {
+    text-align: center;
+    border-collapse: collapse;
+    width: 80%;
+    overflow: scroll;
+    
+}
+h1 {
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 6vh;
+
+}
+
